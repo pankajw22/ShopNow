@@ -39,7 +39,7 @@ public class ExtentReport {
 		extentReport.setSystemInfo("Email ID", extentData.getProperty("email"));
 
 		extentReport.setSystemInfo("Operating System", System.getProperty("os.name"));
-		extentReport.setSystemInfo("User Name", System.getProperty("os.name"));
+		extentReport.setSystemInfo("User Name", System.getProperty("user.name"));
 		extentReport.setSystemInfo("Java Version", System.getProperty("java.version"));
 
 		return extentReport;

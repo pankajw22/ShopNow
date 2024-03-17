@@ -6,6 +6,32 @@
   </listeners>
   <test thread-count="5" name="ShopNow Test(failed)" verbose="0">
     <classes>
+      <class name="com.shopnow.qa.tests.PaymentTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="verifyByClickingCreditCardRadioButton"/>
+          <include name="verifyCompleteDetailsOfCards"/>
+        </methods>
+      </class> <!-- com.shopnow.qa.tests.PaymentTest -->
+      <class name="com.shopnow.qa.tests.OrderSummaryTest">
+        <methods>
+          <include name="verifyCorrectProductAddedInSummary"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="VerifyFunctionalityOfContinueButtonInOrderSummary"/>
+          <include name="verifyQuantiyOfProduct"/>
+          <include name="verifyPriceAndRemoveButton"/>
+          <include name="verifyAcceptAndContinueButton"/>
+        </methods>
+      </class> <!-- com.shopnow.qa.tests.OrderSummaryTest -->
+      <class name="com.shopnow.qa.tests.ShippingTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyCompleteAddressDetails"/>
+        </methods>
+      </class> <!-- com.shopnow.qa.tests.ShippingTest -->
       <class name="com.shopnow.qa.tests.LoginTest">
         <methods>
           <include name="setup"/>

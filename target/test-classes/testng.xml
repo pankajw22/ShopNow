@@ -6,7 +6,6 @@
 	</listeners>
 	<test thread-count="5" name="ShopNow Test">
 		<classes>
-
 			<class name="com.shopnow.qa.tests.HomeTest" />
 			<class name="com.shopnow.qa.tests.SearchTest" />
 			<class name="com.shopnow.qa.tests.ProductTest" />
