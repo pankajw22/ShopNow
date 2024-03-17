@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-17T12:24:42 IST" name="ShopNow" finished-at="2024-03-17T12:27:14 IST" duration-ms="151685">
+    <groups>
+    </groups>
+    <test started-at="2024-03-17T12:24:42 IST" name="ShopNow Test" finished-at="2024-03-17T12:27:14 IST" duration-ms="151685">
+      <class name="com.shopnow.qa.tests.HomeTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.shopnow.qa.tests.HomeTest@6fdbe764]" started-at="2024-03-17T12:24:44 IST" name="setup" finished-at="2024-03-17T12:24:50 IST" duration-ms="6589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyWebsiteLoadSuccessfully()[pri:0, instance:com.shopnow.qa.tests.HomeTest@6fdbe764]" started-at="2024-03-17T12:24:50 IST" name="verifyWebsiteLoadSuccessfully" finished-at="2024-03-17T12:25:00 IST" duration-ms="9851" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWebsiteLoadSuccessfully -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shopnow.qa.tests.HomeTest@6fdbe764]" started-at="2024-03-17T12:25:00 IST" name="tearDown" finished-at="2024-03-17T12:25:01 IST" duration-ms="1121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.shopnow.qa.tests.HomeTest -->
+      <class name="com.shopnow.qa.tests.CheckOutTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.shopnow.qa.tests.CheckOutTest@1530c739]" started-at="2024-03-17T12:26:05 IST" name="setup" finished-at="2024-03-17T12:26:32 IST" duration-ms="26718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyCorrectProduchAddedInCart()[pri:1, instance:com.shopnow.qa.tests.CheckOutTest@1530c739]" started-at="2024-03-17T12:26:32 IST" name="verifyCorrectProduchAddedInCart" finished-at="2024-03-17T12:26:33 IST" duration-ms="1233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCorrectProduchAddedInCart -->
+        <test-method signature="verifyToPlaceAnOrder()[pri:2, instance:com.shopnow.qa.tests.CheckOutTest@1530c739]" started-at="2024-03-17T12:26:33 IST" name="verifyToPlaceAnOrder" finished-at="2024-03-17T12:26:37 IST" duration-ms="4105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyToPlaceAnOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shopnow.qa.tests.CheckOutTest@1530c739]" started-at="2024-03-17T12:26:37 IST" name="tearDown" finished-at="2024-03-17T12:26:38 IST" duration-ms="813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.shopnow.qa.tests.CheckOutTest -->
+      <class name="com.shopnow.qa.tests.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.shopnow.qa.tests.LoginTest@5b1669c0]" started-at="2024-03-17T12:26:38 IST" name="setup" finished-at="2024-03-17T12:27:10 IST" duration-ms="32016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyValidEmailidAndPassword()[pri:0, instance:com.shopnow.qa.tests.LoginTest@5b1669c0]" started-at="2024-03-17T12:27:10 IST" name="verifyValidEmailidAndPassword" finished-at="2024-03-17T12:27:13 IST" duration-ms="2946" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Error detected on the page: 'Something's not right. Please try again.']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Error detected on the page: 'Something's not right. Please try again.'
+at org.testng.Assert.fail(Assert.java:111)
+at com.shopnow.qa.pages.LoginPage.enterEmailid(LoginPage.java:57)
+at com.shopnow.qa.tests.LoginTest.verifyValidEmailidAndPassword(LoginTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidEmailidAndPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shopnow.qa.tests.LoginTest@5b1669c0]" started-at="2024-03-17T12:27:13 IST" name="tearDown" finished-at="2024-03-17T12:27:14 IST" duration-ms="805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.shopnow.qa.tests.LoginTest -->
+      <class name="com.shopnow.qa.tests.SearchTest">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.shopnow.qa.tests.SearchTest@53fe15ff]" started-at="2024-03-17T12:25:01 IST" name="Setup" finished-at="2024-03-17T12:25:11 IST" duration-ms="10122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="verifySearchValidProductName()[pri:1, instance:com.shopnow.qa.tests.SearchTest@53fe15ff]" started-at="2024-03-17T12:25:11 IST" name="verifySearchValidProductName" finished-at="2024-03-17T12:25:22 IST" duration-ms="10881" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchValidProductName -->
+        <test-method signature="verifyToClickOnSearchResultProduct()[pri:2, instance:com.shopnow.qa.tests.SearchTest@53fe15ff]" started-at="2024-03-17T12:25:22 IST" name="verifyToClickOnSearchResultProduct" finished-at="2024-03-17T12:25:28 IST" depends-on-methods="com.shopnow.qa.tests.SearchTest.verifySearchValidProductName" duration-ms="6096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyToClickOnSearchResultProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shopnow.qa.tests.SearchTest@53fe15ff]" started-at="2024-03-17T12:25:28 IST" name="tearDown" finished-at="2024-03-17T12:25:29 IST" duration-ms="810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.shopnow.qa.tests.SearchTest -->
+      <class name="com.shopnow.qa.tests.ProductTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.shopnow.qa.tests.ProductTest@449a4f23]" started-at="2024-03-17T12:25:29 IST" name="setup" finished-at="2024-03-17T12:25:48 IST" duration-ms="18718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifyPincodeFieldAndCheckButton()[pri:1, instance:com.shopnow.qa.tests.ProductTest@449a4f23]" started-at="2024-03-17T12:25:48 IST" name="VerifyPincodeFieldAndCheckButton" finished-at="2024-03-17T12:25:59 IST" duration-ms="10872" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyPincodeFieldAndCheckButton -->
+        <test-method signature="verifyProductAddToBag()[pri:2, instance:com.shopnow.qa.tests.ProductTest@449a4f23]" started-at="2024-03-17T12:25:59 IST" name="verifyProductAddToBag" finished-at="2024-03-17T12:26:03 IST" depends-on-methods="com.shopnow.qa.tests.ProductTest.VerifyPincodeFieldAndCheckButton" duration-ms="4213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductAddToBag -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shopnow.qa.tests.ProductTest@449a4f23]" started-at="2024-03-17T12:26:03 IST" name="tearDown" finished-at="2024-03-17T12:26:05 IST" duration-ms="2195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.shopnow.qa.tests.ProductTest -->
+    </test> <!-- ShopNow Test -->
+  </suite> <!-- ShopNow -->
+</testng-results>
