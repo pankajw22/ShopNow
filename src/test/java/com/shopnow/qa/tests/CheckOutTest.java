@@ -55,10 +55,10 @@ public class CheckOutTest extends BaseClass {
 		 * the cart after adding, we are going to apply assertion.
 		 */
 
-		String nameInSearchPageTrimmed = nameInSearchPage.replace("La...", "").trim();
-		String productNameInCheckoutTrimmed = productNameInCheckout.replace("Laptop", "").trim();
+		String nameInSearchPageAfterReplace = nameInSearchPage.replace("La...", "");
+		String productNameInCheckoutAfterReplace = productNameInCheckout.replace("Laptop", "");
 
-		Assert.assertEquals(nameInSearchPageTrimmed, productNameInCheckoutTrimmed);
+		Assert.assertEquals(nameInSearchPageAfterReplace, productNameInCheckoutAfterReplace);
 
 	}
 
